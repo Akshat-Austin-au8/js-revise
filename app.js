@@ -1,22 +1,29 @@
 console.log('hello world')
 
-function test(a, b, c) {
-  console.log([...arguments])
-  console.log(arguments.length)
+var button = document.getElementsByTagName('button')
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener('click', () => {
+    console.log(button[i].innerText)
+  })
 }
-test('apple', 'mango', 'banana')
 
-function test(test) {
-  let test
-  console.log(test)
-  var test = 'var test'
-  function test() {
-    console.log('test func')
-  }
-  console.log(test)
-}
-test('hello')
+// function test(a, b, c) {
+//   console.log([...arguments])
+//   console.log(arguments.length)
+// }
+// test('apple', 'mango', 'banana')
 
-function NewTab() {
-  window.open('https://www.google.com')
-}
+// function test(test) {
+//   let test
+//   console.log(test)
+//   var test = 'var test'
+//   function test() {
+//     console.log('test func')
+//   }
+//   console.log(test)
+// }
+// test('hello')
+
+// function NewTab() {
+//   window.open('https://www.google.com')
+// }
