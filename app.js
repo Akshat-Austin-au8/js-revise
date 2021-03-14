@@ -1,11 +1,20 @@
 console.log('hello world')
 
-var button = document.getElementsByTagName('button')
-for (let i = 0; i < button.length; i++) {
-  button[i].addEventListener('click', () => {
-    console.log(button[i].innerText)
-  })
+function outer(test) {
+  console.log(test)
+  var test = 'var test'
+  function test() {
+    console.log('test func')
+  }
+  console.log(test)
 }
+
+// var button = document.getElementsByTagName('button')
+// for (let i = 0; i < button.length; i++) {
+//   button[i].addEventListener('click', () => {
+//     console.log(button[i].innerText)
+//   })
+// }
 
 // function test(a, b, c) {
 //   console.log([...arguments])
